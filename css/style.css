@@ -89,7 +89,7 @@ color: #000000;
 .tabletNav {display: none;}
 .tabletMenu {display: none;}
 .navigation {
-    background-color: #2F4A75;
+    background-color: rgba(47, 74, 117, 0.5);
     position: absolute;
     width: 86.12%;
     height: 131px;
@@ -180,14 +180,14 @@ ul {
     position: absolute;
     margin-top: 131px;
 }
-.heroImg img {
-    width: 305px;
-    position: absolute;
-    height: 418px;
-    
-    right: 6.94%;
-    top: 156px;
 
+.backgroundHero {
+    position: absolute;
+    z-index: -100;
+    width: 135.2%;
+    left: -35.21;
+    right: 0%;
+    top: -311px;
 }
 .content {
     
@@ -195,19 +195,22 @@ ul {
 }
 
 #contentH1 {
-    
     position: absolute;
-    width: 820px;
-    height: 160px;
-    left: 6.94%;
-    top: 156px;
+height: 160px;
+
+right: 6.94%;
+top: 200px;
     margin: 0px;
+    
+    text-align: right;
 }
 #contentH1 h1 {
     margin: 0px;
+    color: white;
 }
 
 #contentH4 {
+    display: none;
     position: absolute;
     width: 715px;
     height: 150px;
@@ -237,6 +240,7 @@ button:hover {
 }
 
 .content button {
+    display: none;
     position: absolute;
     left: 6.94%;
     top: 594px;
@@ -245,9 +249,19 @@ button:hover {
 /* Projects section coded with CSS flex */
 .projectsSection {
     margin-top: 897px;
-    background-color: #303030;
     padding-left: 6.94%;
     padding-right: 6.94%;
+}
+#filmBg {
+    width: 100%;
+    z-index: -99;
+    position: absolute;
+    
+    left: 0%;
+    right: 0%;
+    top: 897px;
+    object-fit: cover;
+    overflow-y: hidden;
 }
 .wh {
     color: white;
@@ -270,7 +284,7 @@ button:hover {
 .card {
     width: 32%;
     padding: 0px;
-    background-color: #1D7365;
+    background-color: #2F4A75;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -309,7 +323,7 @@ button:hover {
 /* Footer */
 #mobileFooter {display: none;}
 footer {
-    background-color: #2F4A75;
+    background-color:  rgba(47, 74, 117, 0.5);
     width: 100%;
     position: relative;
     bottom: 0%;
@@ -649,18 +663,9 @@ color: white;
  /* Media Queries Desktop desktop small */
 
  @media only screen and (min-width: 1000px) and (max-width: 1200px) {
-    #contentH1 {
-        width: 60%;
-        top: 76px;
-    }
-    #contentH4 {
-        width: 60%;
-    }
-    .heroImg img {
-        width: 25.4%;
-        height: auto;
-        top: 156px;
-    }
+   .projectsSection {
+       margin-top: 720px;
+   }
     #contJh {
        
         width: 50%;
