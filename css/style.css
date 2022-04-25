@@ -113,7 +113,15 @@ color: #000000;
     left: 6.94%;
     right: 68.96%;
     top: 8px;
- 
+    transition: all 0.3s ease-in-out;
+}
+.headerImage:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.logo:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .flexNav {
     position: absolute;
@@ -142,6 +150,14 @@ color: #000000;
 }
 .navLinks h4 {
     color: white;
+}
+.hoverNavButton {
+    transition: all 0.2s ease-in-out;
+}
+.hoverNavButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #E6C347
 }
 .contact {
     padding-right:0px;
@@ -210,15 +226,17 @@ top: 200px;
 }
 
 #contentH4 {
-    display: none;
+    margin-top: 40px;
     position: absolute;
     width: 715px;
     height: 150px;
-    left: 6.94%;
+    right: 6.94%;
     top: 380px;    
 }
 #contentH4 h4 {
     margin: 0px;
+    text-align: right;
+    color: white;
 }
 button {
     border: none;
@@ -575,6 +593,12 @@ transition: all .3s ease-in-out;
     right: 6.94%;
     width: 86.12%;
     top: 424px;
+    text-align: left;
+    color: white;
+    margin-top: 100px;
+}
+#contentH4 H4 {
+    text-align: left;
 }
 #bAbout {
     right: 6.94%;
@@ -797,7 +821,7 @@ transition: all .3s ease-in-out;
 
 #contentH4 {
     right: 6.94%;
-    width: 86.12%;
+    width: 74%;
     top: 704px;
 }
 #bAbout {
